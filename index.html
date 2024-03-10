@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
         <title>Liam Gates</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,600&display=swap">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class="bio">
+        <header>
+            <nav>
+                <h1>Liam Gates</h1>
+                <ul>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="./Liam Gates Resume.pdf" target="_blank">Resume</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="controls">
+                <label class="toggle-switch">
+                  Dark Mode
+                  <input type="checkbox" id="dark-mode-toggle">
+                  <div class="toggle-switch-border">
+                    <div class="toggle-switch-dot"></div>
+                  </div>
+                </label>
+            </div>
+        </header>
+        <section class="bio" id="bio">
             <img src="./image.jpeg" class="profile-image">
             <div>
-                <h2>Hi! My name is Liam Gates. I'm a software developer.</h2>
+                <h2>Hi, I'm Liam Gates, a software developer studying CS at UMass Amherst.</h2>
                 <p>
                     I am currently studying computer science at UMass Amherst. I currently have
                     experience with web design (HTML, CSS, & JS), artificial intelligence (Python), and systems
@@ -18,7 +41,7 @@
                 <a href="#projects" class="bio-btn">See my projects</a>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <article>
                 <div>
@@ -41,6 +64,35 @@
                 <img class="project-image" src="https://raw.githubusercontent.com/kaitlynmalsky/algorhythmz/routing/src/images/cooldudehackumass.png">
             </article>
         </section>
+        <foote class="contact" id="contact">
+            <ul>
+              <li>
+                <a href="#">
+                  LinkedIn
+                  <span class="link-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  CV
+                  <span class="link-icon">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  GitHub
+                  <span class="link-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copywright">© 2024 Liam Gates</p>
+          </footer>
         <script src="script.js"></script>
     </body>
 </html>
