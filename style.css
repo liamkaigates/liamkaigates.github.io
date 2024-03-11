@@ -132,13 +132,21 @@ a.bio-btn {
 }
 
 .project-image {
-    max-width: 512x;
-    border-radius: 2rem;
+    max-width: 512px;
+    max-height: 512px;
+    border-radius: 4rem;
+    padding: 3rem;
     margin-inline-start: 2rem;
 }
 
 article {
     display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+}
+
+.profile-info {
+    width: 50%;
 }
 
 @media (max-width: 1024px) {
@@ -153,4 +161,46 @@ article {
         border-radius: 2rem;
         margin-inline-start: 2rem;
     }
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15%;
+}
+
+footer a {
+    display: inline-flex;
+    flex-direction: column;
+    color: #1C2321;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+}
+
+footer .copywright {
+    margin: 3rem 0;
+}
+
+footer .link-icon {
+    margin-block-start: 0.5rem;
+    background-color: #EEF1EF;
+    color: #0D1B2A;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

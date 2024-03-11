@@ -32,7 +32,7 @@
         <section class="bio" id="bio">
             <img src="./image.jpeg" class="profile-image">
             <div>
-                <h2>Hi, I'm Liam Gates, a software developer studying CS at UMass Amherst.</h2>
+                <h2>Hi, I'm Liam Gates, a software developer.</h2>
                 <p>
                     I am currently studying computer science at UMass Amherst. I currently have
                     experience with web design (HTML, CSS, & JS), artificial intelligence (Python), and systems
@@ -44,7 +44,7 @@
         <section class="projects" id="projects">
             <h2>Projects</h2>
             <article>
-                <div>
+                <div class="project-info">
                     <h3>Algorhythmz</h3>
                     <p>Generates rap lyrics about the user's query using Natural Language Processing.</p>
                     <strong>Nov 2023</strong>
@@ -59,15 +59,35 @@
                             Engineered a lyric generation system employing Natural Language Processing (NLP) techniques
                         </li>
                     </ul>
-                    <a href="https://github.com/kaitlynmalsky/algorhythmz" target="_blank">Github Repo</a>
+                    <a class="bio-btn" href="https://github.com/kaitlynmalsky/algorhythmz" target="_blank">Github Repo</a>
                 </div>
                 <img class="project-image" src="https://raw.githubusercontent.com/kaitlynmalsky/algorhythmz/routing/src/images/cooldudehackumass.png">
             </article>
+            <article>
+              <div class="project-info">
+                <h3>Chess</h3>
+                <p>Implemented a chess engine and bot using minimax and alpha-beta pruning.</p>
+                <strong>Dec 2022</strong>
+                <ul>
+                    <li>
+                        Designed and implemented a sophisticated chess engine focusing on UX and advanced AI 
+                    </li>
+                    <li>
+                        Engineered AI intelligence using alpha-beta pruning and multiprocessing to enhance game play
+                    </li>
+                    <li>
+                        Integrated dynamic game animations through the pygame library, adding visually engaging elements to the UI
+                    </li>
+                </ul>
+                <a class="bio-btn" href="https://github.com/liamkaigates/Chess-Python" target="_blank">Github Repo</a>
+            </div>
+            <img class="project-image" src="./chess.png">
+            </article>
         </section>
-        <foote class="contact" id="contact">
+        <footer class="contact" id="contact">
             <ul>
               <li>
-                <a href="#">
+                <a class="contact-link" href="https://www.linkedin.com/in/liamkaigates/">
                   LinkedIn
                   <span class="link-icon">
                     <i class="fa-brands fa-linkedin"></i>
@@ -75,15 +95,15 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  CV
+                <a class="contact-link" href="./Liam Gates Resume.pdf">
+                  Resume
                   <span class="link-icon">
                     <i class="fa-solid fa-user"></i>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="contact-link" href="https://github.com/liamkaigates">
                   GitHub
                   <span class="link-icon">
                     <i class="fa-brands fa-github"></i>
