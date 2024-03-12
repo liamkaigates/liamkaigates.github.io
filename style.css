@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+header ul li {
+    list-style-type: none;
+    margin-inline-start: 2rem;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
