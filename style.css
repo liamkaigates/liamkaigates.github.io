@@ -1,7 +1,6 @@
 body {
     font-size: 16px;
-    font-family: sans-serif;
-    width: 70%;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0 auto;
 }
 
@@ -9,6 +8,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15%;
+    color: white;
+    background-color: black;
+}
+
+header h1 {
+    font-size: 1.5rem;
 }
 
 header ul {
@@ -23,11 +29,16 @@ header ul li {
 
 header a {
     font-weight: bold;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
-section {
+.content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -47,10 +58,34 @@ section .about-text p {
     font-size: 1.5rem;
 }
 
-section img {
+.about img {
     width: 25%;
     border: 2px solid black;
     border-radius: 50%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    border-block-end: 1px solid black;
+}
+
+.skill-icons {
+    display: flex;
+    align-items: center;
+}   
+
+.skill-icons i {
+    padding-right: 1rem;
+    margin: 0;
+}
+
+.skill-icons svg {
+    width: 3rem;
+    height: 3rem;
+    padding-right: 1rem;
+    margin: 0;
 }
 
 footer {
@@ -67,6 +102,10 @@ footer .contact-links {
 
 footer .link {
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
 }
 
 footer .copyright {
