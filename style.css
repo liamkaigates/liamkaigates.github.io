@@ -2,6 +2,7 @@ body {
     font-size: 16px;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0 auto;
+    background-color: #e7e7e7;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
-    color: white;
+    color: #e7e7e7;
     background-color: black;
 }
 
@@ -29,8 +30,12 @@ header ul li {
 
 header a {
     font-weight: bold;
-    color: white;
+    color: #e7e7e7;
     text-decoration: none;
+}
+
+header a:hover {
+    color: white;
 }
 
 .content {
@@ -42,12 +47,11 @@ header a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 2rem;
-    border-block-end: 1px solid black;
+    padding: 1rem 0;
 }
 
 section .about-text {
-    padding: 2rem;
+    padding: 0 1rem;
 }
 
 section .about-text h2 {
@@ -67,17 +71,17 @@ section .about-text p {
 .skills {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
-    border-block-end: 1px solid black;
 }
 
 .skill-icons {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
 }   
 
 .skill-icons i {
     padding-right: 1rem;
+    padding-bottom: 0.5rem;
     margin: 0;
 }
 
@@ -88,9 +92,56 @@ section .about-text p {
     margin: 0;
 }
 
+section.project {
+    padding-bottom: 1rem;
+}
+
+.project-container {
+    margin: 0 auto;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.project-item {
+    width: 40%;
+    height: 100%;
+    padding: 0.75rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+}
+
+.project-display {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 2.75rem;
+    font-size: 1.25rem;
+}
+
+.fa-circle-plus {
+    color: black;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-circle-plus:hover {
+    color: rgb(83, 83, 83);
+    background-color: white;
+}
+
 footer {
+    border-top: 1px solid black;
     display: flex;
     flex-direction: column;
+    padding: 1rem 10%;
 }
 
 footer .contact-links {
@@ -115,12 +166,22 @@ footer .copyright {
 
 @media screen and (max-width: 512px) {
     body {
-        width: 90%;
+        width: 100%;
     }
     section {
         flex-direction: column; 
     }
     section img {
         width: 80%;
+    }
+    section .project-container {
+        flex-flow: column wrap;
+    }
+    section .project-item {
+        padding-bottom: 1rem;
+    }
+    .content {
+        width: 90%;
+        margin: 0 auto;
     }
 }
