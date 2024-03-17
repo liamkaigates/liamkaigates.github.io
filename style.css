@@ -2,7 +2,7 @@ body {
     font-size: 16px;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0 auto;
-    background-color: #e7e7e7;
+    background-color: white;
 }
 
 header {
@@ -10,12 +10,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
-    color: #e7e7e7;
-    background-color: black;
+    color: white;
+    background-color: rgba(29, 29, 31);
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: normal;
 }
 
 header ul {
@@ -25,13 +26,13 @@ header ul {
 
 header ul li {
     list-style-type: none;
-    margin-inline-start: 2rem;
+    margin-inline-start: 3rem;
 }
 
 header a {
-    font-weight: bold;
-    color: #e7e7e7;
+    color: rgba(255, 255, 255, 0.8);;
     text-decoration: none;
+    font-weight: light;
 }
 
 header a:hover {
@@ -43,28 +44,34 @@ header a:hover {
     margin: 0 auto;
 }
 
+.content h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
 .about {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 0;
+    flex-direction: column;
+    padding: 5rem 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
-section .about-text {
-    padding: 0 1rem;
+.about p {
+    font-size: 1.75rem;
+    font-weight: 600;
 }
 
-section .about-text h2 {
-    font-size: 2rem;
-}
-
-section .about-text p {
-    font-size: 1.5rem;
+.about-text {
+    width: 70%;
+    padding-top: 3rem;
 }
 
 .about img {
-    width: 25%;
-    border: 2px solid black;
+    width: 30%;
+    border: 0.25rem solid black;
     border-radius: 50%;
 }
 
@@ -73,22 +80,33 @@ section .about-text p {
     flex-direction: column;
 }
 
-.skill-icons {
+.language {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }   
 
-.skill-icons i {
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+.language li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.language i {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     margin: 0;
 }
 
-.skill-icons svg {
-    width: 3rem;
-    height: 3rem;
-    padding-right: 1rem;
+.language svg {
+    width: 4rem;
+    height: 4rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     margin: 0;
 }
 
