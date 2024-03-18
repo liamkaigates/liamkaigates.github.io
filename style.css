@@ -30,7 +30,7 @@ header ul {
 
 header ul li {
     list-style-type: none;
-    margin-inline-start: 3rem;
+    margin-inline-start: 2rem;
 }
 
 header a {
@@ -58,9 +58,22 @@ header a:hover {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 5rem 0;
     margin: 0 auto;
     text-align: center;
+}
+
+.fa-tree {
+    color: #00e15c;
+}
+
+canvas {
+    z-index: 0;
+}
+
+.about-content {
+    z-index: 1;
+    position: absolute;
+    width: 70%;
 }
 
 .about p {
@@ -69,11 +82,12 @@ header a:hover {
 }
 
 .about-text {
-    width: 70%;
+    width: 60%;
     padding-top: 3rem;
+    margin: 0 auto;
 }
 
-.about img {
+.about-content img {
     width: 30%;
     border: 0.25rem solid black;
     border-radius: 50%;
