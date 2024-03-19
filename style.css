@@ -1,3 +1,7 @@
+html { 
+    scroll-behavior: smooth; 
+}
+
 body {
     font-size: 16px;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12,10 +16,6 @@ header {
     padding: 0 15%;
     color: white;
     background-color: rgba(29, 29, 31);
-}
-
-header .logo {
-    color: #00e15c;
 }
 
 header h1 {
@@ -60,10 +60,6 @@ header a:hover {
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
-}
-
-.fa-tree {
-    color: #00e15c;
 }
 
 canvas {

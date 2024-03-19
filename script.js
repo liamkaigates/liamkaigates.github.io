@@ -1,26 +1,19 @@
 const canvas = document.getElementById("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-if (canvas.getContext) {
-    const ctx = canvas.getContext("2d");
-    let raf;
-    let running = false;
+const ctx = canvas.getContext("2d");
+const image = new Image();
+image.src = "mug.svg";
 
-    function generateLeaf(x, y) { 
-        return {
-            x: x,
-            y: y,
-            vx: 0,
-            vy: -1,
-            image: new Image(), 
-            draw() {
-                this.image.onload = () => {
-                    ctx.drawImage(this.image, x, y, 10, 10);
-                };
-                this.image.src = "leaf.svg";
-            }
-        };
-    }
-    let leaf = generateLeaf(100, 100);
-    leaf.draw();
-}
+function getCoffee(x, y) {
+    return {
+        x: x,
+        y: y,
+        draw() {
+            ctx.drawImage(image, this.x, this.y, 50, 50);
+        },
+    };
+};
+
+let coffee = getCoffee(25, 25);
+coffee.draw();
