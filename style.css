@@ -13,9 +13,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 70%;
     padding: 0 15%;
     color: white;
     background-color: rgba(29, 29, 31);
+    position: fixed;
 }
 
 header h1 {
@@ -57,33 +59,29 @@ header a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
 }
 
-canvas {
-    z-index: 0;
-}
-
-.about-content {
-    z-index: 1;
-    position: absolute;
-    width: 70%;
+.about-terminal {
+    font-family: "Monaco", 'Courier New', Courier, monospace;
+    width: 50%;
+    background-color: rgba(29, 29, 31);
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .about p {
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: 1rem;
 }
 
-.about-text {
-    width: 60%;
-    padding-top: 3rem;
-    margin: 0 auto;
+.about .type {
+    animation: type 1s steps(2) infinite;
+    color: white;
 }
 
-.about-content img {
+.about img {
     width: 30%;
     border: 0.25rem solid black;
     border-radius: 50%;
@@ -92,6 +90,7 @@ canvas {
 .skills {
     display: flex;
     flex-direction: column;
+    padding: 5rem 0;
 }
 
 .language {
@@ -99,7 +98,6 @@ canvas {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
 }   
 
 .language li {
@@ -215,5 +213,11 @@ footer .copyright {
     .content {
         width: 90%;
         margin: 0 auto;
+    }
+}
+
+@keyframes type {
+    0% { 
+        opacity: 0; 
     }
 }
