@@ -46,7 +46,7 @@ header a:hover {
 }
 
 .content {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -65,11 +65,45 @@ header a:hover {
 
 .about-terminal {
     font-family: "Monaco", 'Courier New', Courier, monospace;
-    width: 50%;
+    height: 35%;
     background-color: rgba(29, 29, 31);
     color: white;
     border-radius: 1rem;
-    padding: 1rem;
+}
+
+.terminal-content {
+    padding: 0.5rem;
+    padding-top: 0;
+}
+
+.about-window {
+    background-color: rgb(60, 60, 60);
+    padding: 0rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-window .button-list {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0.25rem 0;
+}
+
+.about-window .button {
+    color: gray;
+    background-color: gray;
+    border-radius: 50%;
+    margin-inline-start: 0.5rem;
+}
+
+.about-window .button:hover {
+    background-color: rgb(60, 60, 60);
 }
 
 .about p {
@@ -82,7 +116,7 @@ header a:hover {
 }
 
 .about img {
-    width: 30%;
+    width: 35%;
     border: 0.25rem solid black;
     border-radius: 50%;
 }
@@ -90,6 +124,8 @@ header a:hover {
 .skills {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
     padding: 5rem 0;
 }
 
@@ -104,22 +140,20 @@ header a:hover {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .language i {
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    margin: 0;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .language svg {
     width: 4rem;
     height: 4rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    margin: 0;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 section.project {
@@ -154,7 +188,7 @@ section.project {
     font-size: 1.25rem;
 }
 
-.fa-circle-plus {
+.project .fa-circle-plus {
     color: black;
     position: absolute;
     bottom: 0.5rem;
@@ -162,7 +196,7 @@ section.project {
     border-radius: 50%;
 }
 
-.fa-circle-plus:hover {
+.project .fa-circle-plus:hover {
     color: rgb(83, 83, 83);
     background-color: white;
 }
