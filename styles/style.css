@@ -13,27 +13,76 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
-    padding: 0 15%;
+    width: 90%;
+    padding: 0 5%;
     color: white;
     background-color: rgba(29, 29, 31);
     position: fixed;
-    z-index: 0;
+    z-index: 10;
 }
 
-header h1 {
+.logo {
     font-size: 1.25rem;
     font-weight: normal;
 }
 
-header ul {
-    display: inline-flex;
-    justify-content: space-around;
+.logo-icon {
+    display: block;
+    --fa-animation-iteration-count: 1;
 }
 
-header ul li {
+#desktop-nav {
+    display: block;
+}
+
+#mobile-nav {
+    display: none;
+    flex-flow: column wrap;
+}
+
+.nav-links {
+    display: inline-flex;
+}
+
+.nav-links li {
     list-style-type: none;
     margin-inline-start: 2rem;
+}
+
+.fa-bars {
+    display: inline-flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.mobile-nav-links {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0 5%;
+    padding-bottom: 0.5rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear, transform 0.3s ease-in-out;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(29, 29, 31);
+    z-index: 20;
+    overflow: hidden;
+    border-bottom-left-radius: 1rem;
+}
+
+.mobile-nav-links.open {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transition-delay: 0s;
+}
+
+.mobile-nav-links li {
+    list-style-type: none;
+    font-size: 1rem;
 }
 
 header a {
@@ -46,27 +95,70 @@ header a:hover {
     color: white;
 }
 
-.content {
-    width: 80%;
+.home-container {
+    padding: 0 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
+    height: 85vh;
 }
 
-.content h2 {
+.home-text {
+    padding: 4rem;
+}
+
+.home-text h1, h2 {
     font-size: 3rem;
+}
+
+.home-text p {
+    font-size: 1.5rem;
+}
+
+.home-text h1, h2, p {
+    padding: 0.25rem 0;
+    margin: 0;
+}
+
+.home-text a {
+    color: rgba(29, 29, 31);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-img {
+    width: 35%;
+    border: 0.25rem solid black;
+    border-radius: 50%;
+}
+
+.home-arrow {
     text-align: center;
+    height: 15vh;
+}
+
+.home-arrow h3 {
+    padding: 0;
+}
+
+.home-arrow a {
+    color: rgba(29, 29, 31);
 }
 
 .about {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 9rem;
-    padding-bottom: 4rem;
+    height: 100vh;
 }
+
 
 .about-terminal {
     font-family: "Monaco", 'Courier New', Courier, monospace;
-    height: 35%;
+    height: 70%;
+    width: 70%;
     background-color: rgba(29, 29, 31);
     color: white;
     border-radius: 1rem;
@@ -114,12 +206,6 @@ header a:hover {
 .about .type {
     animation: type 1s steps(2) infinite;
     color: white;
-}
-
-.about img {
-    width: 35%;
-    border: 0.25rem solid black;
-    border-radius: 50%;
 }
 
 .skills-container {
@@ -242,28 +328,7 @@ footer .copyright {
     text-align: center;
 }
 
-@media screen and (max-width: 512px) {
-    body {
-        width: 100%;
-    }
-    section {
-        flex-direction: column; 
-    }
-    section img {
-        width: 80%;
-    }
-    section .project-container {
-        flex-flow: column wrap;
-    }
-    section .project-item {
-        padding-bottom: 1rem;
-    }
-    .content {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
+ 
 @keyframes type {
     0% { 
         opacity: 0; 

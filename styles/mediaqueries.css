@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+    }
+    .home-container {
+        flex-flow: column nowrap;
+    }
+}
