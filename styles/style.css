@@ -211,11 +211,11 @@ header a:hover {
 .skills-container {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 90%;
-    padding: 6rem 0;
+    width: 80%;
+    height: 100vh;
 }
 
 .skills-list {
@@ -223,6 +223,8 @@ header a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    width: 90%;
+    padding: 0;
 }
 
 .skills-list li {
@@ -257,12 +259,20 @@ header a:hover {
 }
 
 .project {
-    padding: 4rem 0;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-title {
+    padding: 2rem;
 }
 
 .project-container {
     margin: 0 auto;
-    padding: 1rem 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -270,9 +280,7 @@ header a:hover {
 }
 
 .project-item {
-    width: 40%;
-    height: 100%;
-    padding: 0.75rem;
+    width: 40vh;
     display: flex;
     position: relative;
     flex-direction: column;
