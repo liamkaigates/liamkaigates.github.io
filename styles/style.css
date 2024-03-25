@@ -268,7 +268,7 @@ header a:hover {
 }
 
 .project-title {
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .project-container {
@@ -277,6 +277,10 @@ header a:hover {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.project-wrap {
+    padding: 2rem 4rem;
 }
 
 .project-item {
@@ -307,6 +311,25 @@ header a:hover {
 .project .fa-circle-plus:hover {
     color: rgb(83, 83, 83);
     background-color: white;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-stack {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-inline-start: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-stack p {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 footer {
