@@ -145,26 +145,26 @@
         <h2 class="project-title">Projects</h2>
         <div class="project-container">
             <div class="project-wrap">
-                <div class="project-item">
+                <div class="project-item" id="project1">
                     <div class="project-display">
                         <h3>Chess Bot</h3>
                         <i class="fa-solid fa-chess fa-8x"></i>
                     </div>
                     <div class="project-links">
                         <h4 class="project-stack">Tech Stack: <i class="fa-brands fa-python fa-1x"></i></h4>
-                        <a href="https://github.com/liamkaigates/Chess-Python" target="_blank"><i class="fa-solid fa-circle-plus fa-2x"></i></a>
+                        <a class="button" href="#popup1"><i class="fa-solid fa-circle-plus fa-2x"></i></a>
                     </div>
                 </div>
             </div>
             <div class="project-wrap">
-                <div class="project-item">
+                <div class="project-item" id="project2">
                     <div class="project-display">
                         <h3>Algorhythmz</h3>
                         <i class="fa-solid fa-music fa-8x"></i>
                     </div>
                     <div class="project-links">
                         <h4 class="project-stack">Tech Stack: <i class="fa-brands fa-react fa-1x"></i> <img width="16" height="16" src="https://img.icons8.com/ios/200/flask.png" alt="flask"/> <p>NLTK</p> </h4>
-                        <a href="https://github.com/kaitlynmalsky/algorhythmz" target="_blank"><i class="fa-solid fa-circle-plus fa-2x"></i></a>
+                        <a class="button" href="#popup2"><i class="fa-solid fa-circle-plus fa-2x"></i></a>
                     </div>
                 </div>
             </div>
@@ -182,5 +182,46 @@
     </footer>
     <script src="https://kit.fontawesome.com/c51edf595d.js" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
+    <div class="project-popup" id="popup1">
+        <div class="project-popup-content">
+            <h2 class="project-popup-title">Chess Bot</h2>
+            <a class="close" href="#project1"><i class="fa-solid fa-circle-xmark fa-2x"></i></a>
+            <section>
+                <h3>Overview:</h3>
+                <p>The "Chess AI with Minimax and Alpha-Beta Pruning" project is a Python-based implementation of an artificial intelligence system designed to play chess against human opponents. It employs the Minimax algorithm with Alpha-Beta pruning to make strategic decisions on the chessboard, aiming to maximize its chances of winning while minimizing the opponent's opportunities.</p>
+            </section>
+            <section>
+                <h3>Description:</h3>
+                <p>This project features a 2D array representation of the chessboard, with pieces denoted by their initials. Each piece is assigned a score, and the AI evaluates different moves using the Minimax algorithm, exploring potential moves up to a specified depth. Alpha-Beta pruning optimizes the algorithm by reducing unnecessary exploration. The AI's strategies include piece scoring, depth-limited search, and Alpha-Beta pruning. Users can interact with the AI by running the provided Python script and adjusting parameters such as search depth and piece scores for customization.</p>
+            </section>
+            <section>
+                <h3>Credits:</h3>
+                <p>Inspired by chess AI concepts, Minimax algorithm, and Alpha-Beta pruning. Feel free to contribute or customize as desired!</p>
+                <h3>Tech Stack: <i class="fa-brands fa-python fa-2x"></i></h3>
+                <h3>Github Link: <a class="link" href="https://github.com/liamkaigates/Chess-Python" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></h3>
+            </section>
+        </div>
+    </div>
+    <div class="project-popup" id="popup2">
+        <div class="project-popup-content">
+            <h2 class="project-popup-title">Algorhythmz</h2>
+            <a class="close" href="#project2"><i class="fa-solid fa-circle-xmark fa-2x"></i></a>
+            <section>
+                <h3>Overview:</h3>
+                <p>Algorhythmz is a web application built for HackUMass XI, allowing users to generate freestyle rap based on a one-word prompt. The application utilizes a dataset of over 40,000 songs to create unique rap lyrics tailored to the user's input. It is accessible via algorhythmz.tech and is hosted on Netlify.</p>
+            </section>
+            <section>
+                <h3>Description:</h3>
+                <p>At algorhythmz.tech, users can input a single-word prompt, and the application generates freestyle rap lyrics by leveraging a dataset of 40,000+ songs. The application is built using React.JS for the frontend, with HTML and CSS for layout and styling. Python is used for the backend, incorporating libraries such as Beautiful Soup and nltk for data processing.</p>
+                <p>The project is hosted on Netlify and makes use of the .tech domain name. Group members involved in the development include Liam Gates and Kaitlyn Malsky for the frontend, and Ty Dagan and Affan Ahmed Habib for the backend.</p>
+            </section>
+            <section>
+                <h3>Dataset:</h3>
+                <p>The dataset used for generating rap lyrics is sourced from the "genius-expertise" dataset, which explores expertise and dynamics within crowdsourced musical knowledge curation, as detailed in the paper by Derek Lim and Austin R. Benson presented at the International Conference on Web and Social Media (ICWSM) in 2021.</p>
+                <h3>Tech Stack: <i class="fa-brands fa-react fa-2x"></i> <img width="32" height="32" src="https://img.icons8.com/ios/200/flask.png" alt="flask"/> <p class="framework">NLTK</p></h3>
+                <h3>Github Link: <a class="link" href="https://github.com/kaitlynmalsky/algorhythmz" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></h3>
+            </section>
+        </div>
+    </div>
 </body>
 </html>

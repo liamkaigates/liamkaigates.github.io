@@ -332,6 +332,73 @@ header a:hover {
     font-weight: normal;
 }
 
+.project-popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 4rem;
+}
+
+.project-popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-popup-content {
+    margin: auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    width: 50%;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.project-popup-content .link {
+    color: black;
+    border-radius: 50%;
+}
+
+.project-popup-content .link:hover {
+    color: rgb(83, 83, 83);
+    background-color: white;
+}
+
+.project-popup-content .close {
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+}
+
+.project-popup-content .close:hover {
+    color: rgb(83, 83, 83);
+    background-color: white;
+}
+
+.project-popup-content p {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.project-popup-content .framework {
+    display: inline-block;
+}
+
 footer {
     border-top: 1px solid black;
     display: flex;
