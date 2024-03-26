@@ -340,7 +340,7 @@ header a:hover {
     right: 0;
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.4);
-    transition: opacity 500ms;
+    transition: visibility 500ms ease-in-out, opacity 500ms ease-in-out;
     visibility: hidden;
     opacity: 0;
     z-index: 10;
@@ -364,7 +364,7 @@ header a:hover {
     border-radius: 1rem;
     width: 50%;
     position: relative;
-    transition: all 500ms ease-in-out;
+    transition: visibility 500ms ease-in-out, opacity 500ms ease-in-out;
 }
 
 .project-popup-content .link {
