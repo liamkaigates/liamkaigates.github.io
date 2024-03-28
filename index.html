@@ -7,6 +7,7 @@
     <title>Liam Gates Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
     <header>
@@ -64,6 +65,14 @@
         <div class="home-arrow">
             <h3>Learn about me</h3>
             <a href="#about"><i class="fa-solid fa-chevron-down fa-2x fa-beat"></i></a>
+        </div>
+        <div class="button-container">
+            <div class="light-mode-button" onclick="toggleDarkMode()">
+                <i class="fa-solid fa-sun fa-2x"></i>
+            </div>
+            <div class="dark-mode-button" onclick="toggleDarkMode()">
+                <i class="fa-solid fa-moon fa-2x"></i>
+            </div>
         </div>
     </section>
     <section class="about" id="about">
@@ -130,15 +139,15 @@
             <li><i class="fa-brands fa-html5 fa-6x"></i><p>HTML</p></li>
             <li><i class="fa-brands fa-css3-alt fa-6x"></i><p>CSS</p></li>
             <li><i class="fa-brands fa-java fa-6x"></i><p>Java</p></li>
-            <li><img width="50" height="50" src="https://img.icons8.com/ios-filled/100/c-plus-plus-logo.png" alt="c-plus-plus-logo"/><p>C++</p></li>
-            <li><img width="96" height="96" src="images/icons8-c-120.png" alt="c"/><p>C</p></li>
-            <li><img width="96" height="96" src="https://img.icons8.com/small/96/bash.png" alt="bash"/><p>Bash</p></li>
+            <li><i class="devicon-cplusplus-plain"></i><p>C++</p></li>
+            <li><i class="devicon-c-plain"></i><p>C</p></li>
+            <li><i class="devicon-bash-plain"></i><p>Bash</p></li>
             <li><i class="fa-brands fa-react fa-6x"></i><p>React</p></li>
             <li><i class="fa-brands fa-node fa-6x"></i><p>Node.js</p></li>
             <li><i class="fa-brands fa-git fa-6x"></i><p>Git</p></li>
             <li><i class="fa-brands fa-github fa-6x"></i><p>Github</p></li>
             <li><i class="fa-brands fa-linux fa-6x"></i><p>Linux</p></li>
-            <li><img width="100" height="100" src="https://img.icons8.com/ios/200/flask.png" alt="flask"/><p>Flask</p></li>
+            <li><i class="devicon-flask-plain"></i><p>Flask</p></li>
         </ul>
     </section>
     <section class="project" id="project">
@@ -222,7 +231,7 @@
             <section>
                 <h3>Dataset:</h3>
                 <p>The dataset used for generating rap lyrics is sourced from the "genius-expertise" dataset, which explores expertise and dynamics within crowdsourced musical knowledge curation, as detailed in the paper by Derek Lim and Austin R. Benson presented at the International Conference on Web and Social Media (ICWSM) in 2021.</p>
-                <h3>Tech Stack: <i class="fa-brands fa-react fa-2x"></i> <img width="32" height="32" src="https://img.icons8.com/ios/200/flask.png" alt="flask"/> <p class="framework">NLTK</p></h3>
+                <h3>Tech Stack: <i class="fa-brands fa-react fa-2x"></i> <i class="devicon-flask-plain"></i> <p class="framework">NLTK</p></h3>
                 <h3>Github Link: <a class="link" href="https://github.com/kaitlynmalsky/algorhythmz" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></h3>
             </section>
         </div>

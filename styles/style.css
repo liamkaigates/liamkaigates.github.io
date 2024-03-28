@@ -7,6 +7,7 @@ body {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0 auto;
     background-color: white;
+    z-index: 0;
 }
 
 header {
@@ -86,7 +87,7 @@ header {
 }
 
 header a {
-    color: rgba(255, 255, 255, 0.8);;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     font-weight: light;
 }
@@ -145,6 +146,71 @@ header a:hover {
 
 .home-arrow a {
     color: rgba(29, 29, 31);
+}
+
+.button-container {
+    position: fixed;
+}
+
+.light-mode-button, .dark-mode-button {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 2rem;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 10;
+}
+
+.light-mode-button:hover {
+    cursor: pointer;
+    color:rgb(83, 83, 83);
+}
+
+.dark-mode-button {
+    visibility: hidden;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .light-mode-button {
+    visibility: hidden;
+}
+
+.dark-mode .dark-mode-button {
+    visibility: visible;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.dark-mode .dark-mode-button:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.dark-mode .home-img {
+    border-color: white;
+}
+
+.dark-mode .home-text a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.dark-mode .home-arrow a {
+    color: white;
+}
+
+.dark-mode .skills-list { 
+    color: white;
 }
 
 .about {
@@ -240,13 +306,7 @@ header a:hover {
 
 .skills-list i {
     margin: 0 auto;
-}
-
-.skills-list img, svg {
-    width: 6rem;
-    height: 6rem;
-    margin: 0 auto;
-    padding-bottom:a 
+    font-size: 6rem;
 }
 
 .skills-list p {
@@ -292,6 +352,10 @@ header a:hover {
     border-radius: 1.5rem;
 }
 
+.dark-mode .project-item {
+    border-color: white;
+}
+
 .project-display {
     justify-self: center;
     align-self: center;
@@ -308,9 +372,18 @@ header a:hover {
     border-radius: 50%;
 }
 
+.dark-mode .project .fa-circle-plus {
+    color: white;
+}
+
 .project .fa-circle-plus:hover {
     color: rgb(83, 83, 83);
     background-color: white;
+}
+
+.dark-mode .project .fa-circle-plus:hover {
+    color: rgba(255, 255, 255, 0.65);
+    background-color: black;
 }
 
 .project-links {
@@ -352,6 +425,10 @@ header a:hover {
     padding: 4rem;
 }
 
+.dark-mode .project-popup {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .project-popup:target {
   visibility: visible;
   opacity: 1;
@@ -367,14 +444,29 @@ header a:hover {
     transition: visibility 500ms ease-in-out, opacity 500ms ease-in-out;
 }
 
+.dark-mode .project-popup-content {
+    background-color: black;
+    color: white;
+}
+
 .project-popup-content .link {
     color: black;
+    border-radius: 50%;
+}
+
+.dark-mode .project-popup-content .link {
+    color: white;
     border-radius: 50%;
 }
 
 .project-popup-content .link:hover {
     color: rgb(83, 83, 83);
     background-color: white;
+}
+
+.dark-mode .project-popup-content .link:hover {
+    color: rgba(255, 255, 255, 0.65);
+    background-color: black;
 }
 
 .project-popup-content .close {
@@ -385,9 +477,18 @@ header a:hover {
     border-radius: 50%;
 }
 
+.dark-mode .project-popup-content .close {
+    color: white;
+}
+
 .project-popup-content .close:hover {
     color: rgb(83, 83, 83);
     background-color: white;
+}
+
+.dark-mode .project-popup-content .close:hover {
+    color: rgba(255, 255, 255, 0.65);
+    background-color: black;
 }
 
 .project-popup-content p {
@@ -397,6 +498,10 @@ header a:hover {
 
 .project-popup-content .framework {
     display: inline-block;
+}
+
+.project-popup-content i {
+    font-size: 2rem;
 }
 
 footer {
@@ -428,9 +533,18 @@ footer .link {
     text-decoration: none;
 }
 
+.dark-mode footer .link {
+    color: white;
+}
+
 footer .link:hover i {
     color: rgb(83, 83, 83);
     background-color: white;
+}
+
+.dark-mode footer .link:hover i {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: black;
 }
 
 footer .copyright {
@@ -449,6 +563,10 @@ footer .copyright {
 
 .footer-arrow a {
     color: rgba(29, 29, 31);
+}
+
+.dark-mode .footer-arrow a {
+    color: white;
 }
  
 @keyframes type {
