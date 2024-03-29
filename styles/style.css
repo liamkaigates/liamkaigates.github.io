@@ -413,7 +413,7 @@ header a:hover {
     right: 0;
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.4);
-    transition: visibility 500ms ease-in-out, opacity 500ms ease-in-out;
+    transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
     visibility: hidden;
     opacity: 0;
     z-index: 10;
@@ -441,7 +441,7 @@ header a:hover {
     border-radius: 1rem;
     width: 50%;
     position: relative;
-    transition: visibility 500ms ease-in-out, opacity 500ms ease-in-out;
+    transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
 }
 
 .dark-mode .project-popup-content {
@@ -520,6 +520,7 @@ footer {
 
 footer .contact-links {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     padding-top: 1rem;

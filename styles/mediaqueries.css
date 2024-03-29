@@ -1,11 +1,107 @@
-@media screen and (max-width: 768px) {
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .home-text h1 {
+        font-size: 2rem;
+    }
+    .home-text p {
+        font-size: 1rem;
+    }
+    .skills-container {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    .skills-list i {
+        font-size: 5rem;
+    }
+    .terminal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     #desktop-nav {
         display: none;
     }
     #mobile-nav {
         display: flex;
     }
+    .nav-links {
+        display: none;
+    }
+    .mobile-nav-links li {
+        font-size: 1.25rem;
+    }
     .home-container {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2rem;
+        height: 80vh;
+    }
+    .project-container {
         flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-img {
+        width: 40%;
+    }
+    .home-text {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    .skills-container {
+        height: auto; /* Changed from 100vh to auto for dynamic height adjustment */
+    }
+    .skills-list i {
+        font-size: 4rem;
+    }
+    .project {
+        height: auto;
+    }
+    .project-popup-content {
+        width: 75%;
+    }
+    .footer-arrow {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    .terminal-content p {
+        font-size: 0.75rem;
+    }
+    .skills-container h2 {
+        font-size: 2rem;
+    }
+    .skills-list i {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .home-text {
+        padding-top: 1rem;
+    }
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+    .home-text p {
+        font-size: 0.75rem;
+    }
+    .home-img {
+        width: 50%;
+    }
+    .skills-list i {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .home-text {
+        width: 80%;
+    }
+    .home-img {
+        width: 70%;
     }
 }
