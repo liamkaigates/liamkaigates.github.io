@@ -10,6 +10,14 @@ body {
     z-index: 0;
 }
 
+.light-mode {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.dark-mode {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
 header {
     display: flex;
     justify-content: space-between;
