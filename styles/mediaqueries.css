@@ -1,105 +1,24 @@
-@media screen and (max-width: 1024px) {
-    .home-text h1 {
-        font-size: 2rem;
-    }
-    .home-text p {
-        font-size: 1rem;
-    }
-    .skills-container {
-        flex-flow: column nowrap;
-        text-align: center;
-    }
-    .skills-list i {
-        font-size: 5rem;
-    }
-    .terminal-content {
-        width: 100%;
-    }
-    .project-popup-content {
-        width: 75%;
+@media only screen and (max-width: 1024px) {
+    header {
+        width: 90%;
+        padding: 0 5%;
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
     #desktop-nav {
         display: none;
     }
     #mobile-nav {
-        display: flex;
+        display: block;
     }
-    .nav-links {
+    .nav-link-list {
         display: none;
     }
-    .mobile-nav-links li {
-        font-size: 1.25rem;
-    }
-    .home-container {
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 2rem;
-        height: 80vh;
-    }
-    .project-container {
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .home-img {
-        width: 40%;
-    }
-    .home-text {
-        padding-top: 2rem;
-        padding-bottom: 0;
-    }
-    .skills-container {
-        height: auto; 
-    }
-    .skills-list i {
-        font-size: 4rem;
-    }
-    .project {
-        height: auto;
-    }
-    .footer-arrow {
-        height: auto;
-    }
 }
 
-@media only screen and (max-width: 677px) {
-    .terminal-content p {
-        font-size: 0.75rem;
-    }
-    .skills-container h2 {
-        font-size: 2rem;
-    }
-    .skills-list i {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 565px) {
-    .home-text {
-        padding-top: 1rem;
-    }
-    .home-text h1 {
-        font-size: 1.5rem;
-    }
-    .home-text p {
-        font-size: 0.75rem;
-    }
-    .home-img {
-        width: 50%;
-    }
-    .skills-list i {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 470px) {
-    .home-text {
-        width: 80%;
-    }
-    .home-img {
-        width: 70%;
+@media only screen and (max-width: 425px) {
+    .mobile-nav-link-list {
+        padding-left: 0.5rem;
     }
 }

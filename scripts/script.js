@@ -1,5 +1,8 @@
 function toggleMenu() {
-    let menu = document.querySelector('.mobile-nav-links');
+    let menu = document.querySelector('.mobile-nav-link-list');
+    let button = document.querySelector('.nav-button i');
+    button.classList.toggle('fa-bars');
+    button.classList.toggle('fa-times');
     menu.classList.toggle('open');
 }
 

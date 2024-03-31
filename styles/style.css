@@ -22,21 +22,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    padding: 0 5%;
+    width: 80%;
+    padding: 0 10%;
     color: white;
-    background-color: rgba(29, 29, 31);
+    background-color: rgb(29, 29, 31);
     position: fixed;
     z-index: 10;
 }
 
+header a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: light;
+}
+
+header a:hover {
+    color: white;
+}
+
 .logo {
     font-size: 1.25rem;
-    font-weight: normal;
 }
 
 .logo-icon {
-    display: block;
     --fa-animation-iteration-count: 1;
 }
 
@@ -49,59 +57,60 @@ header {
     flex-flow: column wrap;
 }
 
-.nav-links {
+.nav-link-list {
     display: inline-flex;
 }
 
-.nav-links li {
+.nav-link-list li {
     list-style-type: none;
     margin-inline-start: 2rem;
 }
 
-.fa-bars {
+.nav-button {
     display: inline-flex;
     justify-content: space-around;
+    align-items: center;
+    margin: 1rem auto;
     cursor: pointer;
 }
 
-.mobile-nav-links {
+.mobile-nav-link-list {
     visibility: hidden;
+    position: absolute;
+    overflow: hidden;
     opacity: 0;
     margin: 0;
-    padding: 0 5%;
-    padding-bottom: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
     transform: scaleY(0);
     transform-origin: top;
-    transition: visibility 0s linear 0.3s, opacity 0.3s linear, transform 0.3s ease-in-out;
-    position: absolute;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear, transform 0.5s ease-in-out;
     top: 100%;
-    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background-color: rgba(29, 29, 31);
     z-index: 20;
-    overflow: hidden;
-    border-bottom-left-radius: 1rem;
 }
 
-.mobile-nav-links.open {
+.mobile-nav-link-list.open {
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
     transition-delay: 0s;
 }
 
-.mobile-nav-links li {
-    list-style-type: none;
-    font-size: 1rem;
-}
-
-header a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    font-weight: light;
-}
-
-header a:hover {
+.mobile-nav-link-list a {
     color: white;
+}
+
+.mobile-nav-link-list a:hover {
+    color:  rgba(255, 255, 255, 0.8);
+}
+
+.mobile-nav-link-list li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .home-container {
