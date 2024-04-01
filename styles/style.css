@@ -22,8 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    padding: 0 10%;
+    width: 100%;
     color: white;
     background-color: rgb(29, 29, 31);
     position: fixed;
@@ -41,6 +40,7 @@ header a:hover {
 }
 
 .logo {
+    margin-inline-start: 5%;
     font-size: 1.25rem;
 }
 
@@ -50,11 +50,13 @@ header a:hover {
 
 #desktop-nav {
     display: block;
+    margin-inline-end: 5%;
 }
 
 #mobile-nav {
     display: none;
     flex-flow: column wrap;
+    margin-inline-end: 5%;
 }
 
 .nav-link-list {
