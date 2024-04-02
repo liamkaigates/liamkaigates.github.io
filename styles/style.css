@@ -242,8 +242,8 @@ header a:hover {
 
 .about-terminal {
     font-family: "Monaco", 'Courier New', Courier, monospace;
-    height: 70%;
-    width: 70%;
+    height: 80%;
+    width: 80%;
     background-color: rgba(29, 29, 31);
     color: white;
     border-radius: 1rem;
@@ -295,7 +295,7 @@ header a:hover {
 
 .skills-container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
