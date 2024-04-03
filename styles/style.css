@@ -299,8 +299,13 @@ header a:hover {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 80%;
+    padding: 2rem 0;
+    max-width: 80%;
     height: 100vh;
+}
+
+.skills-container h1 {
+    font-size: 3rem;
 }
 
 .skills-list {
@@ -308,7 +313,7 @@ header a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 100%;
     padding: 0;
 }
 
