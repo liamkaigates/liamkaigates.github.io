@@ -389,10 +389,10 @@ header a:hover {
     font-size: 1.25rem;
 }
 
-.project .fa-circle-plus {
+.project .button, .fa-circle-plus {
     color: black;
     border-radius: 50%;
-    padding-right: 0.5rem; 
+    padding-right: 0.25rem; 
 }
 
 .dark-mode .project .fa-circle-plus {
