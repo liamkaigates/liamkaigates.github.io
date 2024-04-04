@@ -99,7 +99,8 @@
         height: 75vh;
     }
     .home-img {
-        width: 50%;
+        width: 40vw;
+        height: 40vw;
     }
     .home-text {
         padding: 2rem 2rem 0 2rem;
@@ -149,7 +150,8 @@
 
 @media only screen and (max-width: 608px) {
     .home-img {
-        width: 70%;
+        width: 60vw;
+        height: 60vw;
     }
     .light-mode-button, .dark-mode-button {
         width: 1rem;
