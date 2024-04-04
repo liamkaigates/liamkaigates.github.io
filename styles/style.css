@@ -149,7 +149,7 @@ header a:hover {
 }
 
 .home-img {
-    max-width: 35%;
+    width: 35%;
     border: 0.25rem solid black;
     border-radius: 50%;
 }
