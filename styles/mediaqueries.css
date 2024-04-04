@@ -5,6 +5,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .home-text p {
+        font-size: 1rem;
+    }
+    .home-text h1 {
+        font-size: 2rem;
+    }
     .project-item {
         width: 18rem;
         height: 18rem;
@@ -15,12 +21,6 @@
 }
 
 @media only screen and (max-width: 964px) {
-    .home-text p {
-        font-size: 1rem;
-    }
-    .home-text h1 {
-        font-size: 2rem;
-    }
     .project-item {
         width: 16rem;
         height: 16rem;
@@ -40,13 +40,16 @@
     }
 }
 
-@media only screen and (max-width: 826px) {
+@media only screen and (max-width: 859px) {
     .home-text p {
         font-size: 0.9rem;
     }
     .home-text h1 {
         font-size: 1.8rem;
     }
+}
+
+@media only screen and (max-width: 826px) {
     .project-item {
         width: 14rem;
         height: 14rem;
@@ -65,6 +68,15 @@
     }
     .project-popup-content {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 802px) {
+    .home-text p {
+        font-size: 0.8rem;
+    }
+    .home-text h1 {
+        font-size: 1.6rem;
     }
 }
 
@@ -150,8 +162,8 @@
 
 @media only screen and (max-width: 608px) {
     .home-img {
-        width: 60vw;
-        height: 60vw;
+        width: 50vw;
+        height: 50vw;
     }
     .light-mode-button, .dark-mode-button {
         width: 1rem;

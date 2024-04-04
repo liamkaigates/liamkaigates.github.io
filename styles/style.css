@@ -46,6 +46,7 @@ header a:hover {
 
 .logo-icon {
     --fa-animation-iteration-count: 1;
+    --fa-animation-delay: 250ms;
 }
 
 #desktop-nav {
@@ -149,8 +150,8 @@ header a:hover {
 }
 
 .home-img {
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
     border: 0.25rem solid black;
     border-radius: 50%;
 }
