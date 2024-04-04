@@ -4,12 +4,39 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .project-item {
+        width: 18rem;
+        height: 18rem;
+    }
+    .project-display i {    
+        font-size: 8rem;
+    }
+}
+
 @media only screen and (max-width: 964px) {
     .home-text p {
         font-size: 1rem;
     }
     .home-text h1 {
         font-size: 2rem;
+    }
+    .project-item {
+        width: 16rem;
+        height: 16rem;
+        padding-bottom: 0.25rem;
+    }
+    .project-display i {    
+        font-size: 7rem;
+    }
+    .project-stack {
+        font-size: 1.1rem;
+    }
+    .project .fa-circle-plus {
+        font-size: 1.5rem;
+    }
+    .project-popup-content {
+        width: 70%;
     }
 }
 
@@ -20,6 +47,25 @@
     .home-text h1 {
         font-size: 1.8rem;
     }
+    .project-item {
+        width: 14rem;
+        height: 14rem;
+    }
+    .project-display {
+        padding-bottom: 2rem;
+    }
+    .project-display i {    
+        font-size: 6rem;
+    }
+    .project-stack {
+        font-size: 1rem;
+    }
+    .project .fa-circle-plus {
+        font-size: 1.25rem;
+    }
+    .project-popup-content {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 770px) {
@@ -28,6 +74,9 @@
     }
     .home-text h1 {
         font-size: 1.6rem;
+    }
+    .project-popup-content {
+        width: 90%;
     }
 }
 
@@ -68,6 +117,34 @@
     .skills-list i {
         font-size: 4rem;
     }
+    .project {
+        padding-bottom: 2rem;
+    }
+    .project-title {
+        padding: 1rem 0;
+    }
+    .project-container {
+        flex-flow: column nowrap;
+    }
+    .project-wrap {
+        padding-bottom: 2rem;
+    }
+    .project-item {
+        width: 16rem;
+        height: 16rem;
+    }
+    .project-display {
+        padding-bottom: 0;
+    }
+    .project-display i {    
+        font-size: 8rem;
+    }
+    .project-stack {
+        font-size: 1rem;
+    }
+    .project .fa-circle-plus {
+        font-size: 1.25rem;
+    }
 }
 
 @media only screen and (max-width: 608px) {
@@ -89,11 +166,20 @@
     .skills-list i {
         font-size: 4rem;
     }
+    .project-popup-content p {
+        font-size: 1rem;
+    }
+    .project-popup-content .close i {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 549px) {
     .about-window i, .terminal-content p {
         font-size: 0.8rem;
+    }
+    .project-popup  {
+        padding: 3rem;
     }
 }
 
@@ -103,6 +189,12 @@
     }
     .skills-list p {
         font-size: 0.75rem;
+    }
+    .project-title {
+        font-size: 2.5rem;
+    }
+    .project-popup  {
+        padding: 2rem;
     }
 }
 
@@ -126,6 +218,28 @@
     .skills-container h1 {
         font-size: 1.8rem;
     }
+    .project-wrap {
+        padding-bottom: 1.5rem;
+    }
+    .project-item {
+        width: 14rem;
+        height: 14rem;
+    }
+    .project-display {
+        padding-bottom: 0;
+    }
+    .project-display i {    
+        font-size: 6rem;
+    }
+    .project-stack {
+        font-size: 1rem;
+    }
+    .project .fa-circle-plus {
+        font-size: 1.25rem;
+    }
+    .project-popup-content {
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 384px) {
@@ -134,6 +248,9 @@
     }
     .skills-list p {
         font-size: 0.65rem;
+    }
+    .project-popup  {
+        padding: 1.5rem;
     }
 }
 

@@ -343,37 +343,38 @@ header a:hover {
 }
 
 .project {
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    padding-bottom: 6rem;
 }
 
 .project-title {
-    padding: 4rem;
+    font-size: 3rem;
+    padding: 2rem 0;
 }
 
 .project-container {
-    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-}
-
-.project-wrap {
-    padding: 2rem 4rem;
+    width: 80%;
 }
 
 .project-item {
-    width: 40vh;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     position: relative;
     flex-direction: column;
+    justify-content: space-between;
     border: 1px solid black;
     border-radius: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .dark-mode .project-item {
@@ -390,10 +391,8 @@ header a:hover {
 
 .project .fa-circle-plus {
     color: black;
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
     border-radius: 50%;
+    padding-right: 0.5rem; 
 }
 
 .dark-mode .project .fa-circle-plus {
@@ -420,7 +419,6 @@ header a:hover {
     font-size: 1.25rem;
     margin: 0;
     margin-inline-start: 1rem;
-    margin-bottom: 0.5rem;
 }
 
 .project-stack p {
@@ -463,7 +461,7 @@ header a:hover {
     padding: 2rem;
     background: #fff;
     border-radius: 1rem;
-    width: 50%;
+    width: 60%;
     position: relative;
     transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
 }
