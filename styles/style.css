@@ -279,6 +279,7 @@ header a:hover {
     color: gray;
     background-color: gray;
     border-radius: 50%;
+    width: 1rem;
     margin-inline-start: 0.5rem;
 }
 
@@ -391,7 +392,7 @@ header a:hover {
     font-size: 1.25rem;
 }
 
-.project .button, .fa-circle-plus {
+.project .button, .project .fa-circle-plus {
     color: black;
     border-radius: 50%;
     padding-right: 0.25rem; 
