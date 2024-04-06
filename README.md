@@ -25,25 +25,7 @@ In this portfolio, I aim to provide an overview of my professional background, h
 
 ## Usage
 
-The live portfolio is available at [liamkaigates.github.io](https://liamkaigates.github.io). To run the project locally, follow these steps:
-
-1. Clone the repository:
-
-```bash
-git clone
-```
-
-2. Install the dependencies:
-
-```bash
-npm install
-```
-
-3. Start the development server:
-
-```bash
-npm start
-```
+The live portfolio is available at [lgates.dev](https://www.lgates.dev). 
 
 ## Technologies Used
 
